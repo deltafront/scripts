@@ -5,7 +5,7 @@ __author__ = 'charlie'
 
 update_host = ""
 update_port = 80
-update_path= ""
+update_path= "cgi-bin/register.py"
 user_auth_header_name = "CG-AUTH-USER"
 user_value = "CompanyB"
 pass_auth_header_name = "CG-AUTH-PASS"

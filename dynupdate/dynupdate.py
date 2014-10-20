@@ -27,7 +27,8 @@ def send_request():
 def construct_headers():
     timestamp = str(datetime.datetime.now())
     password = get_password(timestamp)
-    return {user_auth_header_name: user_value, timestamp_header_name: timestamp, pass_auth_header_name: password}
+    body_len = len(site_name)
+    return {user_auth_header_name: user_value, timestamp_header_name: timestamp, pass_auth_header_name: password,"CONTENT-LENGTH":str(body_len)}
 
 
 def get_password(timestamp):
