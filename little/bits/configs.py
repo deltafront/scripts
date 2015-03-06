@@ -2,18 +2,16 @@ import logging
 
 __author__ = 'charlie'
 
-#Headers
-accept_header = {"Accept": "application/vnd.littlebits.v2+json"}
-content_header = {"Content-Type": "application/json"}
-auth_header = {"Authorization": "Bearer "}#TODO
+#Auth
+auth_key = "Bearer 57c2c4033382c94bf8a87930073cf49e3aaf0c25dc5acc4db7e549b540e9fba7"
 
 #API endpoints
-little_bits_base_url = "http://api-http.littlebitscloud.cc/v2/"
-little_bits_post_url="devices/%s/output"
-little_bits_get_url = "http://api-http.littlebitscloud.cc/v2/devices/"
+little_bits_base_url = "api-http.littlebitscloud.cc"
+little_bits_post_url="/v2/devices/00e04c1e81b6/output"
+little_bits_get_url = "v2/devices/"
 
 #Registered devices
-wake_me_device_id = "" #TODO
+wake_me_device_id = "00e04c1e81b6" #TODO
 
 #Output file for results
 log_file = "little.bits.log"
